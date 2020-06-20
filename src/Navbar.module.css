@@ -1,4 +1,4 @@
-.navbar {
+.navbar1 {
   background-color: rgb(62, 122, 171, 1);
   height: 35px;
   margin: 0 auto;
@@ -7,34 +7,34 @@
   font-weight: bold;
   transition: 0.2s;
 }
-.logo {
+.navbar1 img {
   float: left;
   width: 35px;
   height: 35px;
   margin-left: 20px;
 }
-nav {
+.navbar1 nav {
   float: left;
   margin-left: 60px;
 }
 
-ul {
+.navbar1 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-nav li {
+.navbar1 nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 8px;
   position: relative;
 }
-nav ul li a {
+.navbar1 nav ul li a {
   color: #d9e4ec;
   text-shadow: #2e5e83 1px 1px 0px;
   text-decoration: none;
 }
-nav a::after {
+.navbar1 nav a::after {
   content: "";
   display: block;
   height: 2px;
@@ -43,6 +43,39 @@ nav a::after {
   position: absolute;
   transition: all ease-in-out 250ms;
 }
-nav a:hover::after {
+.navbar1 nav a:hover::after {
   width: 100%;
+}
+
+.navbar2 {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(243, 243, 244) 0%,
+    rgb(222, 224, 226) 100%
+  );
+
+  height: 23px;
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+}
+.navbar2 img {
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+  float: left;
+}
+
+.navbar2 nav {
+  float: left;
+  margin-left: 60px;
+}
+
+.navbar2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navbar1 nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 8px;
 }
