@@ -1,12 +1,48 @@
 .navbar {
   background-color: rgb(62, 122, 171, 1);
-  height: 1.5cm;
+  height: 35px;
   margin: 0 auto;
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  transition: 0.2s;
 }
-.nav {
-  position: relative;
-  left: 0;
-  display: block;
+.logo {
   float: left;
-  margin: 0 10px 0 0;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+nav {
+  float: left;
+  margin-left: 60px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 8px;
+  position: relative;
+}
+nav ul li a {
+  color: #d9e4ec;
+  text-shadow: #2e5e83 1px 1px 0px;
+  text-decoration: none;
+}
+nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #d9e4ec;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::after {
+  width: 100%;
 }
