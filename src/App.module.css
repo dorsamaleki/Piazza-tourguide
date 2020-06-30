@@ -10,4 +10,9 @@
   line-height: 1.25;
   min-height: 400px;
   height: 100%;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(243, 243, 244) 0%,
+    rgb(222, 224, 226) 100%
+  );
 }

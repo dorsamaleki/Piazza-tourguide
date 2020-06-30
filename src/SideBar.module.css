@@ -1,4 +1,27 @@
-.root {
-  display: inline-block;
-  border: rgb(177, 38, 38);
+.a {
+  border-top: 5px solid white;
+}
+.j {
+  padding: 25px;
+  width: 320px;
+  border-right: 5px solid white;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(243, 243, 244) 0%,
+    rgb(222, 224, 226) 100%
+  );
+  border-bottom: 5px solid white;
+}
+.b {
+  padding: 25px;
+  width: 320px;
+  border-right: 5px solid white;
+  background-color: rgb(184, 138, 148);
+}
+.c {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(243, 243, 244) 0%,
+    rgb(222, 224, 226) 100%
+  );
 }
