@@ -1,22 +1,13 @@
 import React from "react";
 import styles from "./SideBar.module.css";
 
-const eee = [
-  "Question 1",
-  "Question 2",
-  "Question 3",
-  "Question 4",
-  "Question 1",
-  "Question 2",
-  "Question 3",
-  "Question 4",
-];
+const eee = ["Question 1", "Question 2", "Question 3"];
 
 export const SideBar = (props) => {
   return (
-    <div>
-      <div className={styles.a}>
-        <div className={styles.j}>
+    <div className={styles.hoo}>
+      <div className={styles.top}>
+        <div className={styles.side1}>
           <nav>
             <ul>
               <li>
@@ -29,7 +20,7 @@ export const SideBar = (props) => {
         </div>
         <div className={styles.c}>
           {eee.map((content, index) => {
-            return <div className={styles.b}>{content}</div>;
+            return <div className={styles.side2}>{content}</div>;
           })}
         </div>
       </div>
