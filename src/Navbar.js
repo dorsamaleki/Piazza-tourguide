@@ -6,8 +6,14 @@ export const Navbar = () => {
     <div>
       <div className={styles.navbar1}>
         <img
+          src="https://i.pinimg.com/originals/7f/13/c4/7f13c426247c53312b7fa11fded20367.png"
+          alt="logo"
+          className={styles.img1}
+        />
+        <img
           src="https://piazza.com/images/splash/PageTop/Piazza-Icon.png"
           alt="logo"
+          className={styles.img2}
         />
         <nav>
           <ul>

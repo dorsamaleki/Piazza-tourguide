@@ -7,7 +7,14 @@
   font-weight: bold;
   transition: 0.2s;
 }
-.navbar1 img {
+.img1 {
+  float: right;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.img2 {
   float: left;
   width: 35px;
   height: 35px;

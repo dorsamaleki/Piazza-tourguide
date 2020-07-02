@@ -3,12 +3,23 @@ import styles from "./SideBar.module.css";
 import { Questions } from "./Questions";
 
 const eee = [
-  { subject: "Question 1", content: "hoewohwhoehoheoheoheoheoheohoe??", id: 1 },
-  { subject: "Question 2", content: "questio question e??", id: 2 },
+  {
+    subject: "Question 1",
+    content: "hoewohwhoehoheoheoheoheoheohoe??",
+    id: 1,
+    date: "9/25",
+  },
+  {
+    subject: "Question 2",
+    content: "questio question e??",
+    id: 2,
+    date: "8/3",
+  },
   {
     subject: "Question 3",
-    content: "iiirlflfogogogitiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?",
+    content: "iiirlflfogogogitiiiiiiiiiiiiiiiiiiiiiiiiiiiiiopopoiiiiii?",
     id: 3,
+    date: "7/4",
   },
 ];
 

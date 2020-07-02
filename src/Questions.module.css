@@ -7,3 +7,9 @@
   display: inline-block;
   border-radius: 3px;
 }
+.date {
+  float: right;
+}
+.subject {
+  font-weight: bold;
+}
