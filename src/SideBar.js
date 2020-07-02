@@ -3,9 +3,13 @@ import styles from "./SideBar.module.css";
 import { Questions } from "./Questions";
 
 const eee = [
-  { name: "Question 1", id: 1 },
-  { name: "Question 2", id: 2 },
-  { name: "Question 3", id: 3 },
+  { subject: "Question 1", content: "hoewohwhoehoheoheoheoheoheohoe??", id: 1 },
+  { subject: "Question 2", content: "questio question e??", id: 2 },
+  {
+    subject: "Question 3",
+    content: "iiirlflfogogogitiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?",
+    id: 3,
+  },
 ];
 
 export const SideBar = (props) => {
@@ -33,8 +37,8 @@ export const SideBar = (props) => {
           </nav>
         </div>
         <div className={styles.side2}>
-          {eee.map((content, index) => {
-            return <Questions key={eee.id} {...content} />;
+          {eee.map((content) => {
+            return <Questions key={content.id} {...content} />;
           })}
         </div>
       </div>
