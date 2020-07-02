@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./SideBar.module.css";
+import { Questions } from "./Questions";
 
-const eee = ["Question 1", "Question 2", "Question 3"];
+const eee = [
+  { name: "Question 1", id: 1 },
+  { name: "Question 2", id: 2 },
+  { name: "Question 3", id: 3 },
+];
 
 export const SideBar = (props) => {
   return (
@@ -29,7 +34,7 @@ export const SideBar = (props) => {
         </div>
         <div className={styles.side2}>
           {eee.map((content, index) => {
-            return <div>{content}</div>;
+            return <Questions key={eee.id} {...content} />;
           })}
         </div>
       </div>
