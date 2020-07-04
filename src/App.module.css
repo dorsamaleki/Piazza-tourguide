@@ -10,6 +10,7 @@
   line-height: 1.25;
   min-height: 400px;
   height: 100%;
+  width: 100%;
   background-image: -webkit-linear-gradient(
     top,
     rgb(243, 243, 244) 0%,
