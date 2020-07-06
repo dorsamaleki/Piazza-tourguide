@@ -2,5 +2,5 @@ import React from "react";
 import styles from "./Messages.module.css";
 
 export const Messages = () => {
-  return <div className={styles.root}>hellllllllllllo</div>;
+  return <div className={styles.root}>hiiiiiii</div>;
 };

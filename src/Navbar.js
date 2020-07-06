@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
   return (
-    <div>
+    <div className="item1">
       <div className={styles.navbar1}>
         <img
           src="https://i.pinimg.com/originals/7f/13/c4/7f13c426247c53312b7fa11fded20367.png"

@@ -1,5 +1,5 @@
 .top {
-  display: inline-block;
+  grid-area: main;
   border-top: 5px solid white;
   height: 100%;
   width: 370px;

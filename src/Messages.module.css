@@ -1,5 +1,6 @@
 .root {
-  display: inline-block;
-  width: 300px;
-  height: 200px;
+  border-top: 5px solid white;
+  margin-left: 375px;
+  display: block;
+  background-color: tomato;
 }
