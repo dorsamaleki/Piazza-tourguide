@@ -7,6 +7,10 @@
   display: inline-block;
   border-radius: 3px;
 }
+
+.root:hover {
+  background-color: palevioletred;
+}
 .date {
   float: right;
 }
