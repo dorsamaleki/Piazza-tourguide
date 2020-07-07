@@ -1,3 +1,6 @@
 .root {
-  float: right;
+  border-top: 5px solid white;
+  margin-left: 375px;
+  display: block;
+  background-color: rgb(63, 126, 82);
 }

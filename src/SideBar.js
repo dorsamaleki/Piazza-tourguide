@@ -2,27 +2,6 @@ import React from "react";
 import styles from "./SideBar.module.css";
 import { Questions } from "./Questions";
 
-const eee = [
-  {
-    subject: "Question 1",
-    content: "hoewohwhoehoheoheoheoheoheohoe??",
-    id: 1,
-    date: "9/25",
-  },
-  {
-    subject: "Question 2",
-    content: "questio question e??",
-    id: 2,
-    date: "8/3",
-  },
-  {
-    subject: "Question 3",
-    content: "iiirlflfogogogitiiiiiiiiiiiiiiiiiiiiiiiiiiiiiopopoiiiiii?",
-    id: 3,
-    date: "7/4",
-  },
-];
-
 export const SideBar = (props) => {
   return (
     <div className={styles.top}>
@@ -47,7 +26,7 @@ export const SideBar = (props) => {
         </nav>
       </div>
       <div className={styles.side2}>
-        {eee.map((content) => {
+        {props.eee.map((content) => {
           return <Questions key={content.id} {...content} />;
         })}
       </div>
