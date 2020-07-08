@@ -3,11 +3,11 @@ import styles from "./Questions.module.css";
 
 export const Questions = (props) => {
   return (
-    <span className={styles.root}>
+    <span className={styles.root} onClick={props.onClick}>
       <div className={styles.date}>{props.date}</div>
-      <div className={styles.subject}>{props.subject}</div>
+      <div className={styles.subject}>{props.name}</div>
       <br />
-      {props.content}
+      {props.text}
     </span>
   );
 };

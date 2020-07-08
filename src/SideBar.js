@@ -26,8 +26,14 @@ export const SideBar = (props) => {
         </nav>
       </div>
       <div className={styles.side2}>
-        {props.eee.map((content) => {
-          return <Questions key={content.id} {...content} />;
+        {props.list.map((cquestion, index) => {
+          return (
+            <Questions
+              onClick={() => props.onSelect(cquestion.name)}
+              key={index}
+              {...cquestion}
+            />
+          );
         })}
       </div>
     </div>
