@@ -66,6 +66,7 @@
 
   height: 23px;
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  border-bottom: 5px solid white;
 }
 .navbar2 img {
   width: 18px;

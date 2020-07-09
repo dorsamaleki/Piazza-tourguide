@@ -1,6 +1,6 @@
 .top {
   grid-area: main;
-  border-top: 5px solid white;
+
   height: 100%;
   width: 370px;
   border-right: 5px solid white;

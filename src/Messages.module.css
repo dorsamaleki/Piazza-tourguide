@@ -1,6 +1,17 @@
 .root {
-  border-top: 5px solid white;
-  margin-left: 375px;
+  position: absolute;
+  height: 80%;
+  width: 68.5%;
+  margin: 30px 30px 10px 405px;
+  background-color: white;
   display: block;
-  background-color: tomato;
+}
+
+.cover {
+  padding: 100px 10px 20px 30px;
+  background-color: rgb(70, 65, 70);
+}
+.k {
+  padding: 5px 5px 5px 5px;
+  background-color: white;
 }
