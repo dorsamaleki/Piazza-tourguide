@@ -7,8 +7,12 @@ export const Messages = (props) => {
       <div>PnllnlTYPE</div>
 
       <div className={styles.cover}>
-        {props.list.map((question) => {
-          return <div className={styles.k}>{question.text}</div>;
+        {props.list.map((question, index) => {
+          return (
+            <div className={styles.k} key={index}>
+              {question.text}
+            </div>
+          );
         })}
       </div>
     </div>
