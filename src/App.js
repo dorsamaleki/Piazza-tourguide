@@ -23,6 +23,8 @@ const allQuestions = {
   Question3: [
     { text: "I saw the Navigation mixin, but can I do this without mixins?" },
   ],
+  NewPost: [{ text: "New Posttyyyyy" }],
+  Search: [{ text: "Searchhyy" }],
 };
 
 function App(props) {
@@ -34,6 +36,10 @@ function App(props) {
       <div className="grid-container">
         <Navbar />
         <SideBar
+          listButton={[
+            { name: "NewPost", text: "New Posttyyyyy" },
+            { name: "Search", text: "Searchhyy" },
+          ]}
           list={[
             {
               name: "Question1",

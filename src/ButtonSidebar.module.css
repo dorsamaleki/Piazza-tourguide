@@ -1,0 +1,15 @@
+.root {
+  border: 2px solid rgb(141, 136, 136);
+  border-radius: 3px;
+  margin-left: 20px;
+  color: rgb(141, 136, 136);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
