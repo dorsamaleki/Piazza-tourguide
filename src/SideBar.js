@@ -6,12 +6,12 @@ export const SideBar = (props) => {
   return (
     <div className={styles.top}>
       <div className={styles.side1}>
-        {props.listButton.map((k, index) => {
+        {props.listButton.map((k) => {
           return (
             <div>
               <ButtonSidebar
                 onClick={() => props.onSelect(k.name)}
-                key={index}
+                key={k.id}
                 {...k}
               />
               {props.name}
@@ -20,11 +20,11 @@ export const SideBar = (props) => {
         })}
       </div>
       <div className={styles.side2}>
-        {props.list.map((cquestion, index) => {
+        {props.list.map((cquestion) => {
           return (
             <Questions
               onClick={() => props.onSelect(cquestion.name)}
-              key={index}
+              key={cquestion.id}
               {...cquestion}
             />
           );
