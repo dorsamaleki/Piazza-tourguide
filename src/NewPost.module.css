@@ -1,3 +1,7 @@
+.root {
+  padding: 40px;
+  font-size: 20px;
+}
 .subject {
   font-weight: bold;
 }
