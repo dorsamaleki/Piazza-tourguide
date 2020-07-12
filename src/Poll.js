@@ -38,7 +38,12 @@ export const Poll = (props) => {
       <form>
         <label className={styles.subject}>
           Poll &nbsp;
-          <input type="text" name="name" className={styles.textbox} />
+          <input
+            type="text"
+            name="name"
+            className={styles.textbox}
+            placeholder="How was yesterdays lecture ? "
+          />
         </label>
       </form>
       <br />
