@@ -9,24 +9,18 @@ class NewPost extends Component {
     this.state = {
       name: "React",
     };
-    this.onValueChange = this.onValueChange.bind(this);
-    this.formSubmit = this.formSubmit.bind(this);
   }
 
-  onValueChange(event) {
+  onValueChange = (event) => {
     this.setState({
       selectedOption: event.target.value,
     });
-  }
+  };
 
-  formSubmit(event) {
-    event.preventDefault();
-    console.log(this.state.selectedOption);
-  }
   render() {
     return (
       <div className={styles.root}>
-        <form onSubmit={this.formSubmit}>
+        <form>
           <label className={styles.subject}>Post Type</label>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <label className={styles.radio}>

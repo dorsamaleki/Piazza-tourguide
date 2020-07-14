@@ -25,26 +25,21 @@
 }
 .navbar1 nav {
   float: left;
-  margin-left: 60px;
+  margin-left: 250px;
 }
 
-.navbar1 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.navbar1 nav li {
+.text {
   display: inline-block;
   margin-left: 70px;
   padding-top: 8px;
   position: relative;
-}
-.navbar1 nav ul li a {
+
   color: #d9e4ec;
   text-shadow: #2e5e83 1px 1px 0px;
   text-decoration: none;
 }
-.navbar1 nav a::after {
+
+.text::after {
   content: "";
   display: block;
   height: 2px;
@@ -53,7 +48,7 @@
   position: absolute;
   transition: all ease-in-out 250ms;
 }
-.navbar1 nav a:hover::after {
+.text:hover::after {
   width: 100%;
 }
 

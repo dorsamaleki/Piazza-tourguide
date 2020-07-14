@@ -1,0 +1,33 @@
+.exclamationMarkIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border: 3px solid rgb(185, 16, 16);
+  border-radius: 2px;
+  padding: 3px;
+}
+.tickIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border: 3px solid green;
+  border-radius: 2px;
+  padding: 3px;
+}
+.subject {
+  font-size: 25px;
+  color: rgb(141, 136, 136);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  padding: 7px;
+
+  font-size: 20px;
+  color: rgb(141, 136, 136);
+}
+.gridItem {
+  padding: 20px;
+}

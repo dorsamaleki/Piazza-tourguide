@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
     <div className="item1">
       <div className={styles.navbar1}>
@@ -16,20 +16,17 @@ export const Navbar = () => {
           className={styles.img2}
         />
         <nav>
-          <ul>
-            <li>
-              <a href="https://www.google.com/">Ce 87</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Q&A</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Resources</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Statistics</a>
-            </li>
-          </ul>
+          {props.listt.map((item) => {
+            return (
+              <div
+                className={styles.text}
+                key={item.id}
+                onClick={() => props.onSelect(item.name)}
+              >
+                {item.name}
+              </div>
+            );
+          })}
         </nav>
       </div>
       <div className={styles.navbar2}>
