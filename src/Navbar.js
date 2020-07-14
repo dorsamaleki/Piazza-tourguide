@@ -61,7 +61,7 @@ export const Navbar = (props) => {
         <nav>
           <ul>
             <li>
-              <a href="https://www.google.com/">Drafts</a>
+              <a href="https://www.google.com/">History Slider</a>
             </li>
           </ul>
         </nav>

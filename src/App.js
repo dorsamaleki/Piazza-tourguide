@@ -26,12 +26,12 @@ const allQuestions = {
     { text: "I saw the Navigation mixin, but can I do this without mixins?" },
     { id: 3 },
   ],
-  NewPost: [{ text: "New Posttyyyyy" }, { id: 4 }],
-  Search: [{ text: "Searchhyy" }, { id: 5 }],
-  CS154: [{ text: "cs15444" }, { id: 6 }],
-  Home: [{ text: "homee" }, { id: 7 }],
-  Statictics: [{ text: "stato" }, { id: 8 }],
-  Resources: [{ text: "Resour" }, { id: 9 }],
+  NewPost: [{ id: 4 }],
+  Search: [{ id: 5 }],
+  CS154: [{ id: 6 }],
+  Home: [{ id: 7 }],
+  Statictics: [{ id: 8 }],
+  Resources: [{ id: 9 }],
 };
 
 function App(props) {
@@ -43,17 +43,17 @@ function App(props) {
       <div className="grid-container">
         <Navbar
           listt={[
-            { name: "CS154", text: "cs15444", id: 6 },
-            { name: "Home", text: "homee", id: 7 },
-            { name: "Statictics", text: "stato", id: 8 },
-            { name: "Resources", text: "Resour", id: 9 },
+            { name: "CS154", id: 6 },
+            { name: "Home", id: 7 },
+            { name: "Statictics", id: 8 },
+            { name: "Resources", id: 9 },
           ]}
           onSelect={setSelectedQuestion}
         />
         <SideBar
           listButton={[
-            { name: "NewPost", text: "New Posttyyyyy", id: 4 },
-            { name: "Search", text: "Searchhyy", id: 5 },
+            { name: "NewPost", id: 4 },
+            { name: "Search", id: 5 },
           ]}
           list={[
             {
