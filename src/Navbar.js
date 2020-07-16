@@ -3,13 +3,17 @@ import styles from "./Navbar.module.css";
 
 export const Navbar = (props) => {
   return (
-    <div className="item1">
+    <div className="item1" id="side6">
       <div className={styles.navbar1}>
         <img
           src="https://i.pinimg.com/originals/7f/13/c4/7f13c426247c53312b7fa11fded20367.png"
           alt="logo"
           className={styles.img1}
         />
+
+        <div onClick={props.onIconPress} className={styles.helpIcon}>
+          ?
+        </div>
         <img
           src="https://piazza.com/images/splash/PageTop/Piazza-Icon.png"
           alt="logo"

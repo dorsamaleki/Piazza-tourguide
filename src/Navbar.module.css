@@ -10,6 +10,27 @@
   font-weight: bold;
   transition: 0.2s;
 }
+
+.helpIcon {
+  cursor: help;
+  border-radius: 3px;
+  text-align: center;
+  border: 2px solid #d9e4ec;
+  background-color: #d9e4ec;
+  float: right;
+  width: 22px;
+  height: 21px;
+  margin-right: 20px;
+  margin-top: 4px;
+  padding-top: 2px;
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  font-size: 15px;
+  transition: 300ms;
+}
+.helpIcon:hover {
+  transform: scale(1.1);
+}
+
 .img1 {
   float: right;
   width: 25px;

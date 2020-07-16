@@ -12,7 +12,7 @@ export const Home = () => {
             alt="exclamation mark icon"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCnxZ3cwCPgktrfSLzCeBtXYcThC_0s0wKMg&usqp=CAU"
           />
-          <div className={styles.text}>3 unread posts</div>
+          <div className={styles.text}> 3 unread posts</div>
         </div>
         <div className={styles.gridItem}>
           <div className={styles.number}>3</div>&nbsp; total posts
@@ -23,7 +23,7 @@ export const Home = () => {
             alt=" icon"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCnxZ3cwCPgktrfSLzCeBtXYcThC_0s0wKMg&usqp=CAU"
           />
-          <div className={styles.text}>1 unresolved followup</div>
+          <div className={styles.text}> 1 unresolved followup</div>
         </div>
         <div className={styles.gridItem}>
           <div className={styles.number}>0</div>&nbsp; student responses
@@ -37,7 +37,7 @@ export const Home = () => {
           <div className={styles.text}> no answered questions</div>
         </div>
         <div className={styles.gridItem}>
-          <div className={styles.number}>0</div>&nbsp;TA responses
+          <div className={styles.number}>0</div>&nbsp; TA responses
         </div>
       </div>
     </div>

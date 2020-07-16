@@ -5,7 +5,7 @@ import { ButtonSidebar } from "./ButtonSidebar.js";
 export const SideBar = (props) => {
   return (
     <div className={styles.top}>
-      <div className={styles.side1}>
+      <div className={styles.side1} id="side5">
         {props.listButton.map((k) => {
           return (
             <div>
@@ -19,12 +19,13 @@ export const SideBar = (props) => {
           );
         })}
       </div>
-      <div className={styles.side2}>
+      <div className={styles.side2} id="side4">
         {props.list.map((cquestion) => {
           return (
             <Questions
               onClick={() => props.onSelect(cquestion.name)}
               key={cquestion.id}
+              elementId={"side" + cquestion.id}
               {...cquestion}
             />
           );

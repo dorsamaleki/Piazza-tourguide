@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Tour from "reactour";
 import { Navbar } from "./Navbar.js";
 import styles from "./App.module.css";
 import { SideBar } from "./SideBar.js";
@@ -38,6 +39,9 @@ function App(props) {
   const [selectedQuestion, setSelectedQuestion] = useState("Question1");
 
   const questions = allQuestions[selectedQuestion];
+
+  const [showTour, setShowTour] = useState(false);
+
   return (
     <div className={styles.body}>
       <div className="grid-container">
@@ -49,6 +53,7 @@ function App(props) {
             { name: "Resources", id: 9 },
           ]}
           onSelect={setSelectedQuestion}
+          onIconPress={() => setShowTour(true)}
         />
         <SideBar
           listButton={[
@@ -82,9 +87,40 @@ function App(props) {
           onSelect={setSelectedQuestion}
         />
         <Messages list={questions} />
+
+        <Tour
+          steps={steps}
+          isOpen={showTour}
+          onRequestClose={() => setShowTour(false)}
+        />
       </div>
     </div>
   );
 }
-
+const steps = [
+  {
+    selector: "#side1",
+    content: "This is my first Step",
+  },
+  {
+    selector: "#side2",
+    content: "This is my first Step",
+  },
+  {
+    selector: "#side3",
+    content: "This is my first Step",
+  },
+  {
+    selector: "#side4",
+    content: "This is my first Step",
+  },
+  {
+    selector: "#side5",
+    content: "This is my first Step",
+  },
+  {
+    selector: "#side6",
+    content: "This is my first Step",
+  },
+];
 export default App;
