@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Messages.module.css";
-import NewPost from "./NewPost";
+import { NewPost } from "./NewPost";
 import { Home } from "./Home";
 import { Statistics } from "./Statistics";
 export const Messages = (props) => {

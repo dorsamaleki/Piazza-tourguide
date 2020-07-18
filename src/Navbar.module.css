@@ -21,7 +21,7 @@
   width: 22px;
   height: 21px;
   margin-right: 20px;
-  margin-top: 4px;
+  margin-top: 4 px;
   padding-top: 2px;
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   font-size: 15px;
@@ -91,16 +91,6 @@
   float: left;
 }
 
-.navbar2 nav {
-  float: left;
-  margin-left: 60px;
-}
-
-.navbar2 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .navbar1 nav li {
   display: inline-block;
   margin-left: 70px;

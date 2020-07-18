@@ -62,13 +62,6 @@ export const Navbar = (props) => {
           src="https://cdn.clipart.email/9ab111a3d83e524f23e2fad7d5345d7a_folder-replacement-yellow-folder-icon-transparent-background-png-_512-512.jpeg"
           alt="logo"
         />
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.google.com/">History Slider</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
   );

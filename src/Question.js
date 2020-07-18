@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Question.module.css";
+
 export const Question = () => {
+  const [selectedFile, setSelectedFile] = useState(null);
+  const fileChangeHandler = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
+
+  const uploadHandler = () => {
+    console.log(selectedFile);
+  };
+
   return (
     <div className={styles.root}>
       <br />
       <br />
+      <input type="file" onChange={fileChangeHandler} />
+      <button onClick={uploadHandler}>upload</button>
+
       <form>
         <label className={styles.subject}>
           Details &nbsp;
@@ -13,9 +26,10 @@ export const Question = () => {
             type="text"
             name="name"
             placeholder="How was yesterdays lecture ? "
-          />
+          ></input>
         </label>
       </form>
+
       <br />
       <br />
       <form>
