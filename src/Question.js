@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Question.module.css";
 
 export const Question = () => {
+  const [values, setValues] = useState({});
   const [selectedFile, setSelectedFile] = useState(null);
   const fileChangeHandler = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -9,6 +10,9 @@ export const Question = () => {
 
   const uploadHandler = () => {
     console.log(selectedFile);
+  };
+  const handleChange = (event) => {
+    setValues({ ...values, a: event.target.value });
   };
 
   return (
@@ -24,8 +28,9 @@ export const Question = () => {
           <input
             className={styles.textbox}
             type="text"
-            name="name"
+            name="details"
             placeholder="How was yesterdays lecture ? "
+            onChange={handleChange}
           ></input>
         </label>
       </form>
@@ -35,7 +40,12 @@ export const Question = () => {
       <form>
         <label className={styles.subject}>
           Name &nbsp;
-          <input type="text" name="name" placeholder="Show my name" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Show my name"
+            onChange={handleChange}
+          />
         </label>
       </form>
       <br />
