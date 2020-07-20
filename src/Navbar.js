@@ -15,8 +15,8 @@ export const Navbar = (props) => {
           ?
         </div>
         <img
-          src="https://piazza.com/images/splash/PageTop/Piazza-Icon.png"
-          alt="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIjpX9iO2q9K3wV5KcZ0_p9jRtaiCD-A5fNw&usqp=CAU"
+          alt="piazza logo"
           className={styles.img2}
         />
         <nav>

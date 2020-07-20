@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import JoditEditor from "jodit-react";
 import styles from "./Question.module.css";
 
 export const Question = () => {
-  const [values, setValues] = useState({ firstName: "", lastName: "" });
-  const [selectedFile, setSelectedFile] = useState(null);
-  const fileChangeHandler = (event) => {
-    setSelectedFile(event.target.files[0]);
-  };
+  const editor = useRef(null);
+  const [content, setContent] = useState("");
 
-  const uploadHandler = () => {
-    console.log(selectedFile);
+  const config = {
+    readonly: false,
   };
+  const [values, setValues] = useState({ firstName: "", lastName: "" });
+
   const handleChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
@@ -19,23 +19,19 @@ export const Question = () => {
     <div className={styles.root}>
       <br />
       <br />
-      <input type="file" onChange={fileChangeHandler} />
-      <button onClick={uploadHandler}>upload</button>
 
       <form>
         <label className={styles.subject}>
           Details &nbsp;
-          <input
-            className={styles.textbox}
-            type="text"
-            name="firstName"
-            placeholder="How was yesterdays lecture ? "
-            onChange={handleChange}
-          ></input>
+          <JoditEditor
+            ref={editor}
+            value={content}
+            config={config}
+            tabIndex={1} // tabIndex of textarea
+            onBlur={(newContent) => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
+            onChange={(newContent) => {}}
+          />
         </label>
-        <div>
-          {values.firstName} {values.lastName}
-        </div>
       </form>
 
       <br />
