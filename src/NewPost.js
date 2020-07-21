@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "./NewPost.module.css";
 import { Poll } from "./Poll.js";
 import { Question } from "./Question.js";
+import pollicon from "./c.png";
+import questionicon from "./d.png";
 
 export const NewPost = () => {
   const [selectedOption, setSelectedOption] = useState("option2");
@@ -12,9 +14,8 @@ export const NewPost = () => {
 
   return (
     <div className={styles.root}>
-      <form>
-        <label className={styles.subject}>Post Type</label>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+      <label className={styles.subject}>Post Type</label>
+      <form className={styles.side}>
         <label className={styles.radio}>
           <input
             type="radio"
@@ -23,9 +24,9 @@ export const NewPost = () => {
             onChange={onValueChange}
           />
           <img
-            className={styles.img}
+            className={styles.questionicon}
             alt="question icon"
-            src="https://i1.pngguru.com/preview/793/926/527/quadrates-extended-gray-and-black-question-mark-icon-illustration-png-clipart.jpg"
+            src={questionicon}
           />
           Question
         </label>
@@ -37,11 +38,7 @@ export const NewPost = () => {
             checked={selectedOption === "option2"}
             onChange={onValueChange}
           />
-          <img
-            className={styles.img}
-            alt="poll icon"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXCDlYYjjONzIJ0u7xqBsKknw_WBGXEID1yw&usqp=CAU"
-          />
+          <img className={styles.pollicon} alt="poll icon" src={pollicon} />
           Poll
         </label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -53,7 +50,7 @@ export const NewPost = () => {
             onChange={onValueChange}
           />
           <img
-            className={styles.img}
+            className={styles.noteicon}
             alt="note icon"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxA8GAiFcIRCoXzyGWuXs17fPJs43eHUVfXg&usqp=CAU"
           />

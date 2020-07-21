@@ -5,9 +5,10 @@ export const Poll = (props) => {
     <div className={styles.root}>
       <br />
       <br />
-      <form>
-        <label className={styles.subject}>
-          Poll &nbsp;
+      <br />
+      <label className={styles.subject}>Poll &nbsp;</label>
+      <form className={styles.side1}>
+        <label>
           <input
             type="text"
             name="name"
@@ -18,8 +19,9 @@ export const Poll = (props) => {
       </form>
       <br />
       <br />
-      <form>
-        <label className={styles.subject}>Choices</label>&nbsp;
+      <br />
+      <label className={styles.subject}>Choices</label>&nbsp;
+      <form className={styles.side2}>
         <label>
           <input type="text" name="name" className={styles.textbox2} />
           &nbsp;
@@ -28,8 +30,9 @@ export const Poll = (props) => {
       </form>
       <br />
       <br />
-      <form>
-        <label className={styles.subject}>Poll Type</label>&nbsp;
+      <br />
+      <label className={styles.subject}>Poll Type</label>&nbsp;
+      <form className={styles.side3}>
         <label className={styles.radio}>
           <input type="radio" value="option1" checked={true} />
           One choice allowed
@@ -42,7 +45,8 @@ export const Poll = (props) => {
       </form>
       <br />
       <br />
-      <form>
+      <br />
+      <form className={styles.side4}>
         <input type="button" value="Post Poll" className={styles.postbutton} />
         &nbsp;
         <input type="button" value="Draft" className={styles.draftbutton} />

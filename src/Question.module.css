@@ -1,5 +1,4 @@
 .root {
-  padding: 40px;
   font-size: 20px;
 }
 .subject {
@@ -43,4 +42,12 @@
   border-radius: 5px;
   width: 70px;
   height: 35px;
+}
+.side1 {
+  display: inline-block;
+  padding-left: 140px;
+}
+.side2 {
+  display: inline-block;
+  padding-left: 207px;
 }

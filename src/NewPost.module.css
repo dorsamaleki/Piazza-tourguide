@@ -9,10 +9,23 @@
 .radio {
   color: rgb(141, 136, 136);
 }
-.img {
-  width: 25px;
-  height: 25px;
+.noteicon {
+  width: 35px;
+  height: 35px;
   margin-right: 5px;
+  border-radius: 3px;
+}
+.pollicon {
+  width: 37px;
+  height: 37px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.questionicon {
+  width: 37px;
+  height: 37px;
+  margin-right: 5px;
+  border-radius: 5px;
 }
 .textbox {
   border: 1px solid rgb(141, 136, 136);
@@ -33,4 +46,9 @@
   border: 1px solid rgb(141, 136, 136);
   border-radius: 2px;
   background-color: rgb(141, 136, 136);
+}
+
+.side {
+  padding-left: 88px;
+  display: inline-block;
 }

@@ -19,7 +19,7 @@ export const Question = () => {
     <div className={styles.root}>
       <br />
       <br />
-
+      <br />
       <form>
         <label className={styles.subject}>
           Details
@@ -36,9 +36,10 @@ export const Question = () => {
 
       <br />
       <br />
-      <form>
-        <label className={styles.subject}>
-          Name &nbsp;
+      <br />
+      <label className={styles.subject}> Name</label>
+      <form className={styles.side1}>
+        <label>
           <input
             type="text"
             name="lastName"
@@ -50,7 +51,8 @@ export const Question = () => {
       </form>
       <br />
       <br />
-      <form>
+      <br />
+      <form className={styles.side2}>
         <input
           type="button"
           value="Post Question"

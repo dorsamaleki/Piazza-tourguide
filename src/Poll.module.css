@@ -55,3 +55,19 @@
   width: 70px;
   height: 35px;
 }
+.side1 {
+  display: inline-block;
+  padding-left: 150px;
+}
+.side2 {
+  display: inline-block;
+  padding-left: 110px;
+}
+.side3 {
+  display: inline-block;
+  padding-left: 93px;
+}
+.side4 {
+  display: inline-block;
+  padding-left: 207px;
+}
