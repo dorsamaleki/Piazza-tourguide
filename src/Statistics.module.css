@@ -2,3 +2,46 @@
   font-size: 25px;
   color: rgb(141, 136, 136);
 }
+.radio {
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+}
+.pic {
+  display: inline-block;
+}
+.pic img {
+  width: 700px;
+  height: 400px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.gridItem1 {
+  font-size: 25px;
+  color: rgb(141, 136, 136);
+  border-bottom: 2px solid rgb(141, 136, 136);
+  width: 280px;
+}
+.gridItem2 {
+  font-size: 25px;
+  color: rgb(141, 136, 136);
+  border-bottom: 2px solid rgb(141, 136, 136);
+  width: 220px;
+}
+ol {
+  position: absolute;
+  padding-left: 0px;
+  list-style: none;
+  counter-reset: greencounter;
+}
+ol li {
+  counter-increment: greencounter;
+  padding: 5px;
+}
+ol li::before {
+  content: counter(greencounter) ". ";
+  color: rgb(83, 165, 83);
+  font-weight: bold;
+}

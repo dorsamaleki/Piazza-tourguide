@@ -43,9 +43,9 @@ export const Poll = (props) => {
       <br />
       <br />
       <form>
-        <input type="button" value="Post Poll" />
+        <input type="button" value="Post Poll" className={styles.postbutton} />
         &nbsp;
-        <input type="button" value="Draft" />
+        <input type="button" value="Draft" className={styles.draftbutton} />
       </form>
     </div>
   );

@@ -3,7 +3,8 @@
   font-size: 20px;
 }
 .subject {
-  font-weight: bold;
+  font-size: 25px;
+  color: rgb(141, 136, 136);
 }
 .radio {
   color: rgb(141, 136, 136);

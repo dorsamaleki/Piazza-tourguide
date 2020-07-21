@@ -4,7 +4,7 @@ import { Poll } from "./Poll.js";
 import { Question } from "./Question.js";
 
 export const NewPost = () => {
-  const [selectedOption, setSelectedOption] = useState("option1");
+  const [selectedOption, setSelectedOption] = useState("option2");
 
   const onValueChange = (event) => {
     setSelectedOption(event.target.value);

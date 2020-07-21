@@ -10,7 +10,7 @@ export const Messages = (props) => {
         return (
           <div className={styles.k} key={question.id}>
             {question.id === 4 ? <NewPost /> : null}
-            {question.id === 5 ? <Statistics /> : null}
+
             {question.id === 7 ? <Home /> : null}
             {question.id === 8 ? <Statistics list={question} /> : question.text}
           </div>

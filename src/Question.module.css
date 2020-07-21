@@ -2,12 +2,45 @@
   padding: 40px;
   font-size: 20px;
 }
+.subject {
+  display: inline-block;
+  font-size: 25px;
+  color: rgb(141, 136, 136);
+}
 .textbox {
   border: 1px solid rgb(141, 136, 136);
   border-radius: 5px;
   width: 600px;
   height: 100px;
 }
-.subject {
+.textbox2 {
+  border: 1px solid rgb(141, 136, 136);
+  border-radius: 5px;
+  width: 300px;
+  height: 25px;
+}
+.postbutton {
+  background-color: rgb(62, 122, 171, 1);
+
   font-weight: bold;
+  color: #d9e4ec;
+
+  text-decoration: none;
+  padding: 8px;
+
+  border: 1px solid rgb(141, 136, 136);
+  border-radius: 5px;
+  width: 115px;
+  height: 35px;
+}
+.draftbutton {
+  font-weight: bold;
+  color: rgb(141, 136, 136);
+
+  text-decoration: none;
+  padding: 8px;
+  border: 1px solid rgb(141, 136, 136);
+  border-radius: 5px;
+  width: 70px;
+  height: 35px;
 }

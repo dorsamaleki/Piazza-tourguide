@@ -22,7 +22,7 @@ export const Question = () => {
 
       <form>
         <label className={styles.subject}>
-          Details &nbsp;
+          Details
           <JoditEditor
             ref={editor}
             value={content}
@@ -44,15 +44,20 @@ export const Question = () => {
             name="lastName"
             placeholder="Show my name"
             onChange={handleChange}
+            className={styles.textbox2}
           />
         </label>
       </form>
       <br />
       <br />
       <form>
-        <input type="button" value="Post Question" />
+        <input
+          type="button"
+          value="Post Question"
+          className={styles.postbutton}
+        />
         &nbsp;
-        <input type="button" value="Draft" />
+        <input type="button" value="Draft" className={styles.draftbutton} />
       </form>
     </div>
   );
