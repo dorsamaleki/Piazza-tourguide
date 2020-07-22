@@ -9,22 +9,30 @@ import "./App.css";
 
 const allQuestions = {
   Question1: [
-    { text: "But myIndex is returning an empty string, why?" },
+    { header: "Question" },
+    { subject: "Homework 7" },
     {
       text:
-        "I want to do a navigation. Not from a link, but from a dropdown selection (as an example). How can I do this in code? What is this.context?",
+        "Is there a way to only add attributes to a React component if a certain condition is met? I'm supposed to add required and readOnly attributes to form elements based on an Ajax call after render, but I can't see how to solve this since readOnly='false' is not the same as omitting the attribute completely.",
     },
+
     { id: 1 },
   ],
   Question2: [
+    { header: "Question" },
+    { subject: "Poll 1" },
     {
-      text:
-        "How do I declare a 2 dimensional array in JavaScript? How would I access its members? ",
+      text: "what day would be the best day for the midterm review?",
     },
     { id: 2 },
   ],
   Question3: [
-    { text: "I saw the Navigation mixin, but can I do this without mixins?" },
+    { header: "Question" },
+    { subject: "Homework 1" },
+    {
+      text:
+        "I am stuck trying to show that coNP^NP is contained in NP. Does anyone have any advice?",
+    },
     { id: 3 },
   ],
   NewPost: [{ id: 4 }],
@@ -63,25 +71,28 @@ function App(props) {
           list={[
             {
               name: "Question1",
-              text: "But myIndex is returning an empty string, why?",
+              text:
+                "Is there a way to only add attributes to a React component if a certain condition is met?",
               date: "5/2",
               icon: "",
               description: "",
               id: 1,
+              subject: "Homework 7",
             },
             {
               name: "Question2",
-              text:
-                "How do I declare a 2 dimensional array in JavaScript? How would I access its members? ",
+              text: "what day would be the best day for the midterm review?",
               date: "7/8",
               id: 2,
+              subject: "Poll 1",
             },
             {
               name: "Question3",
               text:
-                "I saw the Navigation mixin, but can I do this without mixins?",
+                "I am stuck trying to show that coNP^NP is contained in NP. Does anyone have any advice?",
               date: "9/7",
               id: 3,
+              subject: "Homework 1",
             },
           ]}
           onSelect={setSelectedQuestion}
