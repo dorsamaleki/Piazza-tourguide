@@ -1,10 +1,12 @@
 import React from "react";
+
 import styles from "./Navbar.module.css";
 import usericon from "./usericon.png";
 import foldericon from "./foldericon.png";
+
 export const Navbar = (props) => {
   return (
-    <div className="item1" id="side6">
+    <div id="side6">
       <div className={styles.navbar1}>
         <img src={usericon} alt="user icon" className={styles.usericon} />
 
@@ -16,19 +18,6 @@ export const Navbar = (props) => {
           alt="piazza logo"
           className={styles.img2}
         />
-        <nav>
-          {props.listt.map((item) => {
-            return (
-              <div
-                className={styles.text}
-                key={item.id}
-                onClick={() => props.onSelect(item.name)}
-              >
-                {item.name}
-              </div>
-            );
-          })}
-        </nav>
       </div>
       <div className={styles.navbar2}>
         <img src={foldericon} alt="logo" />

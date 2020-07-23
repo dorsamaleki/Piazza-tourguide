@@ -1,32 +1,50 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import styles from "./Messages.module.css";
 import { NewPost } from "./NewPost";
 import { Home } from "./Home";
 import { Statistics } from "./Statistics";
+import { ShowQuestion } from "./ShowQuestion";
 
 export const Messages = (props) => {
   return (
-    <div className={styles.root}>
-      {props.list.map((question) => {
-        return (
-          <div className={styles.k} key={question.id}>
-            <div className={styles.a}>
-              {question.id === 1 || question.id === 2 || question.id === 3 ? (
-                <div> question</div>
-              ) : null}
-            </div>
-
-            {question.id === 4 ? <NewPost /> : null}
-
-            {question.id === 7 ? <Home /> : null}
-            {question.id === 8 ? (
+    <Router>
+      <div>
+        <div>
+          <nav className={styles.nav}>
+            <ul>
+              <li className={styles.text}>
+                <Link to="/">Home</Link>
+              </li>
+              <li className={styles.text}>
+                <Link to="/Statistics">Statistics</Link>
+              </li>
+              <li className={styles.text}>
+                <Link to="/NewPost">NewPost</Link>
+              </li>
+              <li className={styles.text}>
+                <Link to="/ShowQuestion">ShowQuestion </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className={styles.root}>
+          <Switch>
+            <Route path="/ShowQuestion">
+              <ShowQuestion />
+            </Route>
+            <Route path="/NewPost">
+              <NewPost />
+            </Route>
+            <Route path="/Statistics">
               <Statistics />
-            ) : (
-              <div className={styles.a}>{question.text}</div>
-            )}
-          </div>
-        );
-      })}
-    </div>
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 };

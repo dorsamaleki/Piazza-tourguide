@@ -3,19 +3,23 @@
   height: 80%;
   width: 68.5%;
   margin: 30px 30px 10px 405px;
-  background-color: white;
+
   display: block;
   border-radius: 5px;
 }
+.nav {
+  float: left;
+  margin-left: 250px;
+}
 
-.k {
-  padding: 30px 30px 30px 30px;
-  background-color: white;
-  border-radius: 5px;
-}
-.a {
-  background-color: greenyellow;
-}
-.b {
-  background-color: hotpink;
+.text {
+  display: inline-block;
+  margin-left: 70px;
+  padding-bottom: 100px;
+
+  position: relative;
+
+  color: #d9e4ec;
+  text-shadow: #2e5e83 1px 1px 0px;
+  text-decoration: none;
 }

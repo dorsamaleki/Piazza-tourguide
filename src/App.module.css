@@ -18,24 +18,3 @@
     rgb(222, 224, 226) 100%
   );
 }
-
-@import "Navbar.module.css";
-@import "SideBar.module.css";
-@import "Navbar.module.css";
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "menu main main main main main";
-  grid-gap: 10px;
-  padding: 7px;
-  background-color: darksalmon;
-}
-
-.grid-container div {
-  background-color: darkseagreen;
-  text-align: center;
-
-  font-size: 30px;
-}

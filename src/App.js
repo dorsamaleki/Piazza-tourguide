@@ -17,6 +17,7 @@ const allQuestions = {
     },
 
     { id: 1 },
+    { life: "op" },
   ],
   Question2: [
     { header: "Question" },
@@ -24,6 +25,7 @@ const allQuestions = {
     {
       text: "what day would be the best day for the midterm review?",
     },
+    { life: "op" },
     { id: 2 },
   ],
   Question3: [
@@ -34,6 +36,7 @@ const allQuestions = {
         "I am stuck trying to show that coNP^NP is contained in NP. Does anyone have any advice?",
     },
     { id: 3 },
+    { life: "op" },
   ],
   NewPost: [{ id: 4 }],
   Search: [{ id: 5 }],
@@ -52,17 +55,8 @@ function App(props) {
 
   return (
     <div className={styles.body}>
-      <div className="grid-container">
-        <Navbar
-          listt={[
-            { name: "CS154", id: 6 },
-            { name: "Home", id: 7 },
-            { name: "Statictics", id: 8 },
-            { name: "Resources", id: 9 },
-          ]}
-          onSelect={setSelectedQuestion}
-          onIconPress={() => setShowTour(true)}
-        />
+      <div>
+        <Navbar onIconPress={() => setShowTour(true)} />
         <SideBar
           listButton={[
             { name: "NewPost", id: 4 },
@@ -78,6 +72,7 @@ function App(props) {
               description: "",
               id: 1,
               subject: "Homework 7",
+              life: "op",
             },
             {
               name: "Question2",
@@ -85,6 +80,7 @@ function App(props) {
               date: "7/8",
               id: 2,
               subject: "Poll 1",
+              life: "op",
             },
             {
               name: "Question3",
@@ -93,6 +89,7 @@ function App(props) {
               date: "9/7",
               id: 3,
               subject: "Homework 1",
+              life: "op",
             },
           ]}
           onSelect={setSelectedQuestion}

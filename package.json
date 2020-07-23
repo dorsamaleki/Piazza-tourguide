@@ -11,6 +11,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-multiple-image-input": "^1.0.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "reactour": "^1.18.0",
     "styled-components": "^4.0.0"
