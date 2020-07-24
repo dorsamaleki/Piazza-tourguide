@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./SideBar.module.css";
 import { Questions } from "./Questions";
 import { ButtonSidebar } from "./ButtonSidebar.js";
+
 export const SideBar = (props) => {
   return (
     <div className={styles.top}>
@@ -19,6 +20,7 @@ export const SideBar = (props) => {
           );
         })}
       </div>
+
       <div className={styles.side2} id="side4">
         {props.list.map((cquestion) => {
           return (
