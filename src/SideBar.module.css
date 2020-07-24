@@ -2,7 +2,9 @@
   height: 100%;
   width: 370px;
   border-right: 5px solid white;
-  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
 }
 .side1 {
   padding: 25px;
