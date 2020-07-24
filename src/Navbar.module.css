@@ -41,6 +41,16 @@
   height: 45px;
   margin-left: 20px;
 }
+
+.title {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
 .nav {
   float: left;
   margin-left: 250px;
