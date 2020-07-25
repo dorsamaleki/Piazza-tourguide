@@ -14,7 +14,7 @@ export const Navbar = (props) => {
           alt="piazza logo"
           className={styles.img2}
         />
-        <div className={styles.title}>CS-GO</div>
+        <div className={styles.title}>CS 154</div>
         <NavLink to="/" className={styles.title}>
           Home
         </NavLink>
@@ -28,13 +28,13 @@ export const Navbar = (props) => {
         </div>
       </div>
       <div className={styles.navbar2}>
-        <img src={foldericon} alt="logo" />
-        <img src={foldericon} alt="logo" />
-        <img src={foldericon} alt="logo" />
-        <img src={foldericon} alt="logo" />
-        <img src={foldericon} alt="logo" />
-        <img src={foldericon} alt="logo" />
-        <img src={foldericon} alt="logo" />
+        <img src={foldericon} alt="folder icon" />
+        <img src={foldericon} alt="folder icon" />
+        <img src={foldericon} alt="folder icon" />
+        <img src={foldericon} alt="folder icon" />
+        <img src={foldericon} alt="folder icon" />
+        <img src={foldericon} alt="folder icon" />
+        <img src={foldericon} alt="folder icon" />
       </div>
     </div>
   );

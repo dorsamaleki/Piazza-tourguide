@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "./NewPost.module.css";
 import { Poll } from "./Poll.js";
 import { Question } from "./Question.js";
-import pollicon from "./c.png";
-import questionicon from "./d.png";
+import pollicon from "./pollicon.png";
+import questionicon from "./questionicon.png";
 
 export const NewPost = () => {
   const [selectedOption, setSelectedOption] = useState("option2");

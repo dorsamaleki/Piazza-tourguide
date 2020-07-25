@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Statistics.module.css";
-import postschart from "./a.png";
-import userschart from "./b.png";
+import postschart from "./postschart.png";
+import userschart from "./userschart.png";
 export const Statistics = () => {
   const [selectedOption, setSelectedOption] = useState("option1");
   const handleChange = (event) => {
@@ -12,9 +12,9 @@ export const Statistics = () => {
       <div className={styles.subject}>Usage trends</div>
       <div className={styles.pic}>
         {selectedOption === "option1" ? (
-          <img src={userschart} alt="chart" />
+          <img src={userschart} alt="users chart" />
         ) : (
-          <img src={postschart} alt="chart" />
+          <img src={postschart} alt="posts chart" />
         )}
       </div>
       <div className={styles.radio}>
