@@ -4,22 +4,18 @@ import styles from "./Navbar.module.css";
 import usericon from "./usericon.png";
 import foldericon from "./foldericon.png";
 import { NavLink } from "react-router-dom";
-
+import piazzalogo from "./piazzalogo.png";
 export const Navbar = (props) => {
   return (
-    <div id="side6">
+    <div>
       <div className={styles.navbar1}>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIjpX9iO2q9K3wV5KcZ0_p9jRtaiCD-A5fNw&usqp=CAU"
-          alt="piazza logo"
-          className={styles.piazzalogo}
-        />
+        <img src={piazzalogo} alt="piazza logo" className={styles.piazzalogo} />
         <div className={styles.titlebox}>
           <div className={styles.title}>CS 154</div>
-          <NavLink to="/" className={styles.title}>
+          <NavLink to="/" className={styles.title} id="tour8">
             Home
           </NavLink>
-          <NavLink to="/statistics" className={styles.title}>
+          <NavLink to="/statistics" className={styles.title} id="tour10">
             Statistics
           </NavLink>
           <div className={styles.title}>Resources</div>

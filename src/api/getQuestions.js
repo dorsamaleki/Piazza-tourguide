@@ -26,4 +26,11 @@ export const getQuestions = () => [
     text:
       "Is there a way to only add attributes to a React component if a certain condition is met? I'm supposed to add required and readOnly attributes to form elements based on an Ajax call after render, but I can't see how to solve this since readOnly='false' is not the same as omitting the attribute completely.",
   },
+  {
+    id: 104,
+    subject: "learning curve in machine learning",
+    date: "8/1",
+    text:
+      "I want to know what a learning curve in machine learning is. What is the standard way of plotting it? I mean what should be the x and y axis of my plot?",
+  },
 ];

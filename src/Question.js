@@ -16,7 +16,7 @@ export const Question = () => {
   };
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="tour7">
       <br />
       <br />
       <br />

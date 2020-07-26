@@ -12,7 +12,7 @@ export const ShowQuestion = (props) => {
   }
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="tour2">
       <div className={styles.subject}>
         <div className={styles.questionicon}>?</div>
         <div className={styles.subjecttext}>question</div>

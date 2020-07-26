@@ -8,7 +8,6 @@ export const Questions = (props) => {
     <NavLink
       to={"/question/" + props.id.toString()}
       className={cn(styles.root, { [styles.selected]: props.selected })}
-      id={props.elementId}
     >
       <div className={styles.date}>{props.date}</div>
       <div className={styles.subject}>{props.subject}</div>
