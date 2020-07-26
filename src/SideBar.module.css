@@ -5,6 +5,7 @@
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
+  line-height: 200%;
 }
 .side1 {
   padding: 25px;
@@ -13,7 +14,6 @@
 .side1 div {
   display: inline;
 }
-
 .side2 {
   padding: 10px;
 }

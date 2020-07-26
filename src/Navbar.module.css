@@ -3,17 +3,33 @@
   height: 45px;
   margin: 0 auto;
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
-
   font-weight: bold;
   transition: 0.2s;
 }
-
+.piazzalogo {
+  float: left;
+  height: 45px;
+  margin-left: 20px;
+}
+.titlebox {
+  padding-left: 350px;
+}
+.title {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 20px;
+  color: #d9e4ec;
+  text-shadow: #2e5e83 1px 1px 0px;
+  text-decoration: none;
+}
 .helpIcon {
   cursor: help;
-  border-radius: 3px;
+  border-radius: 4px;
   text-align: center;
-  border: 2px solid #d9e4ec;
-  background-color: #d9e4ec;
+  color: rgb(62, 122, 171, 1);
+  border: 2px solid #e9eced;
+  background-color: #e9eced;
   float: right;
   width: 40px;
   height: 21px;
@@ -27,57 +43,12 @@
 .helpIcon:hover {
   transform: scale(1.1);
 }
-
 .usericon {
   float: right;
-  width: 30px;
-  height: 31px;
+  width: 23px;
+  height: 27px;
   margin-right: 20px;
-  margin-top: 5px;
-}
-.img2 {
-  float: left;
-
-  height: 45px;
-  margin-left: 20px;
-}
-
-.title {
-  float: left;
-  height: 45px;
-  line-height: 45px;
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-.nav {
-  float: left;
-  margin-left: 250px;
-}
-
-.text {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 12px;
-  position: relative;
-
-  color: #d9e4ec;
-  text-shadow: #2e5e83 1px 1px 0px;
-  text-decoration: none;
-}
-
-.text::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0%;
-  background-color: #d9e4ec;
-  position: absolute;
-  transition: all ease-in-out 250ms;
-}
-.text:hover::after {
-  width: 100%;
+  margin-top: 8px;
 }
 
 .navbar2 {
@@ -93,14 +64,8 @@
 }
 .navbar2 img {
   padding-top: 7px;
-  width: 27px;
+  width: 26px;
   height: 18px;
   margin-left: 20px;
   float: left;
-}
-
-.navbar1 nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 8px;
 }

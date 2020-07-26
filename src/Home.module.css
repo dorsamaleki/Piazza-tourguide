@@ -1,3 +1,22 @@
+.root {
+  padding: 40px;
+}
+.subject {
+  font-size: 25px;
+  color: rgb(141, 136, 136);
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  padding: 7px;
+
+  font-size: 20px;
+  color: rgb(141, 136, 136);
+}
+.gridItem {
+  padding: 20px;
+}
 .number {
   display: inline;
   border: 3px solid darkorange;
@@ -23,24 +42,4 @@
   padding: 5px 8px 5px 9px;
   font-size: 25px;
   font-weight: bold;
-}
-.subject {
-  font-size: 25px;
-  color: rgb(141, 136, 136);
-}
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: auto auto;
-
-  padding: 7px;
-
-  font-size: 20px;
-  color: rgb(141, 136, 136);
-}
-.gridItem {
-  padding: 20px;
-}
-.text {
-  display: inline;
 }

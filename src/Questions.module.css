@@ -17,9 +17,11 @@
 
 .date {
   float: right;
+  color: rgb(141, 136, 136);
 }
 .subject {
   font-weight: bold;
+  color: rgb(141, 136, 136);
 }
 
 .text {
@@ -27,4 +29,5 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: rgb(141, 136, 136);
 }

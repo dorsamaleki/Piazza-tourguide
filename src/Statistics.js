@@ -8,7 +8,7 @@ export const Statistics = () => {
     setSelectedOption(event.target.value);
   };
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.subject}>Usage trends</div>
       <div className={styles.pic}>
         {selectedOption === "option1" ? (

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 export const Home = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.subject}>Class at a Glance </div>
       <br />
       <div className={styles.gridContainer}>

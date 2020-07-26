@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Tour from "reactour";
 import { Navbar } from "./Navbar.js";
 import styles from "./App.module.css";
-
 import "./App.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { NewPost } from "./NewPost.js";

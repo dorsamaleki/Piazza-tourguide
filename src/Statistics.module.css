@@ -1,3 +1,6 @@
+.root {
+  padding: 40px;
+}
 .subject {
   font-size: 25px;
   color: rgb(141, 136, 136);

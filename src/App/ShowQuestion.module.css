@@ -1,0 +1,32 @@
+.root {
+  padding: 40px;
+}
+
+.subject {
+  background-color: white;
+  padding: 5px;
+  border-bottom: 2px solid #efeff1;
+}
+
+.questionicon {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: large;
+}
+.subjecttext {
+  display: inline-block;
+  font-size: large;
+  padding-left: 5px;
+  color: blackrgb(141, 136, 136);
+}
+.text {
+  padding: 10px;
+  line-height: 200%;
+  background-color: white;
+  color: rgb(141, 136, 136);
+}
