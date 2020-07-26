@@ -4,7 +4,7 @@ import { Poll } from "./Poll.js";
 import { Question } from "./Question.js";
 import pollicon from "./pollicon.png";
 import questionicon from "./questionicon.png";
-
+import noteicon from "./noteicon.png";
 export const NewPost = () => {
   const [selectedOption, setSelectedOption] = useState("option2");
 
@@ -50,11 +50,7 @@ export const NewPost = () => {
               checked={selectedOption === "option3"}
               onChange={onValueChange}
             />
-            <img
-              className={styles.noteicon}
-              alt="note icon"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxA8GAiFcIRCoXzyGWuXs17fPJs43eHUVfXg&usqp=CAU"
-            />
+            <img className={styles.noteicon} alt="note icon" src={noteicon} />
             Note
           </label>
         </form>
