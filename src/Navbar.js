@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./Navbar.module.css";
 import usericon from "./usericon.png";
 import foldericon from "./foldericon.png";
