@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Statistics.module.css";
-import postschart from "./postschart.png";
-import userschart from "./userschart.png";
+import postschart from "../icon/postschart.png";
+import userschart from "../icon/userschart.png";
+
 export const Statistics = () => {
   const [selectedOption, setSelectedOption] = useState("option1");
   const handleChange = (event) => {
@@ -9,7 +10,7 @@ export const Statistics = () => {
   };
   return (
     <div className={styles.root}>
-      <div id="tour11">
+      <div id="tour8">
         <div className={styles.subject}>Usage trends</div>
         <br />
         <div className={styles.pic}>
@@ -40,14 +41,10 @@ export const Statistics = () => {
             Posts per day
           </label>
         </div>
-
         <br />
-
         <div className={styles.gridContainer}>
           <div className={styles.gridItem1}>Top Student Contributors</div>
-
           <div className={styles.gridItem2}>Top TA Contributors</div>
-
           <div clasName={styles.gridItem}>
             <ol>
               <li>Walter Lynton</li>

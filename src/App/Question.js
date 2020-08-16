@@ -5,18 +5,15 @@ import styles from "./Question.module.css";
 export const Question = () => {
   const editor = useRef(null);
   const [content, setContent] = useState("");
-
   const config = {
     readonly: false,
   };
   const [values, setValues] = useState({ firstName: "", lastName: "" });
-
   const handleChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
-
   return (
-    <div className={styles.root} id="tour7">
+    <div className={styles.root}>
       <br />
       <br />
       <br />
@@ -33,7 +30,6 @@ export const Question = () => {
           />
         </label>
       </form>
-
       <br />
       <br />
       <br />

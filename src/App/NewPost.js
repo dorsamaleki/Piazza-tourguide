@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import styles from "./NewPost.module.css";
 import { Poll } from "./Poll.js";
 import { Question } from "./Question.js";
-import pollicon from "./pollicon.png";
-import questionicon from "./questionicon.png";
-import noteicon from "./noteicon.png";
+import pollicon from "../icon/pollicon.png";
+import questionicon from "../icon/questionicon.png";
+import noteicon from "../icon/noteicon.png";
+
 export const NewPost = () => {
   const [selectedOption, setSelectedOption] = useState("option2");
-
   const onValueChange = (event) => {
     setSelectedOption(event.target.value);
   };
-
   return (
     <div id="tour6">
       <div className={styles.root} id="tour4">

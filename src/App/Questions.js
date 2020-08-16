@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Questions.module.css";
 import { NavLink } from "react-router-dom";
+import styles from "./Questions.module.css";
 import cn from "classnames";
 
 export const Questions = (props) => {

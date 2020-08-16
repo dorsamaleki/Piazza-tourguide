@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Poll.module.css";
+
 export const Poll = (props) => {
   return (
-    <div className={styles.root} id="tour5">
+    <div className={styles.root}>
       <br />
       <br />
       <br />

@@ -2,13 +2,11 @@
   padding: 40px;
   height: 100%;
 }
-
 .subject {
   background-color: white;
   padding: 5px;
   border-bottom: 2px solid #efeff1;
 }
-
 .questionicon {
   background-color: black;
   color: white;

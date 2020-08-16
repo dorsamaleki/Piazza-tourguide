@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Home.module.css";
+
 export const Home = () => {
   return (
-    <div className={styles.root} id="tour9">
+    <div className={styles.root} id="tour6">
       <div className={styles.subject}>Class at a Glance </div>
       <br />
       <div className={styles.gridContainer}>

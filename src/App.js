@@ -1,27 +1,48 @@
 import React, { useState } from "react";
-import Tour from "reactour";
-import { Navbar } from "./Navbar.js";
-import styles from "./App.module.css";
-import "./App.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import { NewPost } from "./NewPost.js";
-import { Statistics } from "./Statistics.js";
-import { Home } from "./Home.js";
-import { SideBar } from "./SideBar.js";
+import Tour from "reactour";
+import "./App.css";
+import styles from "./App.module.css";
+import { tour } from "./config/tour.js";
+import { Navbar } from "./App/Navbar.js";
+import { Home } from "./App/Home.js";
+import { NewPost } from "./App/NewPost.js";
+import { Statistics } from "./App/Statistics.js";
+import { SideBar } from "./App/SideBar.js";
 import { ShowQuestion } from "./App/ShowQuestion";
 import { getQuestions } from "./api/getQuestions";
-import { tour } from "./config/tour.js";
 
 function App(props) {
   const [showTour, setShowTour] = useState(false);
   const questions = getQuestions();
-
+  const [tourStep, setTourStep] = useState(0);
+  const [updateTour, setUpdateTour] = useState("");
   return (
     <div className={styles.body}>
       <Router>
-        <Navbar onIconPress={() => setShowTour(true)} />
+        <Navbar
+          onIconPress={() => setShowTour(true)}
+          onHomeClick={() => {
+            setTourStep(5);
+            setUpdateTour(Date.toString() + "");
+          }}
+          onStatisticsClick={() => {
+            setTourStep(7);
+            setUpdateTour(Date.toString() + "");
+          }}
+        />
         <Route path="/:page?/:id?">
-          <SideBar list={questions} />
+          <SideBar
+            list={questions}
+            onQuestionsClick={() => {
+              setTourStep(1);
+              setUpdateTour(Date.toString() + "");
+            }}
+            onNewpostClick={() => {
+              setTourStep(3);
+              setUpdateTour(Date.toString() + "");
+            }}
+          />
         </Route>
         <div className={styles.content}>
           <Switch>
@@ -44,6 +65,8 @@ function App(props) {
           steps={tour}
           isOpen={showTour}
           onRequestClose={() => setShowTour(false)}
+          goToStep={tourStep}
+          update={updateTour}
         />
       </Router>
     </div>

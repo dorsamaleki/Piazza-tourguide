@@ -10,11 +10,9 @@
   color: #333;
   transition: 200ms;
 }
-
 .selected {
   box-shadow: inset 0px 0px 2px 1px darkgrey;
 }
-
 .date {
   float: right;
   color: rgb(141, 136, 136);
@@ -23,7 +21,6 @@
   font-weight: bold;
   color: rgb(141, 136, 136);
 }
-
 .text {
   width: 100%;
   text-overflow: ellipsis;
